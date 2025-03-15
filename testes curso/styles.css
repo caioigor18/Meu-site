@@ -1,0 +1,11 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media query para desktops */
+@media (min-width: 1024px) {
+    img {
+        width: 50%;
+    }
+}

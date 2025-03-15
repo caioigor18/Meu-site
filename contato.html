@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="home.html"><button class="hdr-btn">Início</button></a>
+            <a href="categorias.html"><button class="hdr-btn">Categorias</button></a>
+            <a href="contato.html"><button class="hdr-btn">Contato</button></a>
+            <a href="sobre.html"><button class="hdr-btn">Sobre</button></a>
+            <a href="redesociais.html"><button class="hdr-btn">Redes Sociais</button></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <img src="https://i.pinimg.com/736x/dd/4a/66/dd4a66f10c138179f210314fe0f91cbb.jpg" alt="image-contato" class="form-image">
+            
+            <form action="/submit" method="post" class="form-content">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+                
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+            
+                <!-- Div específica para centralizar apenas o botão -->
+                <div class="button-container">
+                    <input type="submit" value="Enviar" class="form-submit">
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+
+<footer>
+    <h3 class="footer">Newslleter</h3>
+    <form action="/submit" method="post"></form>
+
+    <input id="news" type="email" name="email" id="email" placeholder="Digite seu e-mail">
+
+    <input type="submit" value="Enviar" class="botao-newsletter">
+
+    <table class="footer-colunas">
+        <tr>
+            <td>
+                <h3><a href="redesociais.html">Redes Sociais</a></h3>
+            </td>
+            <td>
+                <h3>Termos e Condições</h3>
+            </td>
+        </tr>
+</table>
+</footer>
+</html>

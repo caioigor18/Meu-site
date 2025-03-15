@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esse é o meu Wireframe</title>
+</head>
+
+<body>
+    <header>
+        <table width="100%">
+            <tr>
+                <td>
+                    <h1>Blog</h1>
+                    <p>Conteudo do blog </p>
+                </td>
+                <td style="text-align: center;"><input type="text" placeholder="Pesquisar">
+                </td>
+            </tr>
+        </table>
+    </header>
+    <!-- Link absoluto -->
+    <a href="https://www.valentino.com/en-wx/">Meu site</a>
+    <!-- Tabela para organizer dados -->
+    <table> <!--Sempre teremos a tag TR dentro da tabela, que define as linhas da tabela -->
+        <tr> <!--Definem as linhas da tabela -->
+            <th>Nome</th> <!--Definem os cabeçalhos da tabela -->
+            <th>Cidade</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Caio</td> <!--Definem as celulas da tabela -->
+            <td>São Paulo</td>
+            <td>27</td>
+        </tr>
+    </table>
+
+    <!-- Formulários -->
+    <form action="/submit" method="post"> <!-- Tag que contém/ Tag ACTION define a url que o formulário será enviado-->
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem"></textarea>
+        <label for="genero">Gênero:</label>
+        <input type="radio" name="" id="">
+        <label for="">Homem</label>
+        <input type="radio" name="" id="">
+        <label for="">Mulher</label>
+        <input type="radio" name="" id="">
+        <label for="">Prefiro não dizer</label>
+        <label for="inscrever">inscreva-se</label>
+        <input type="checkbox" name="inscrever" id="inscrever">
+        <label for="pais">País</label>
+        <select name="" id="">
+            <option value="">Brasil</option>
+            <option value="">Londres</option>
+            <option value="">Paris</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

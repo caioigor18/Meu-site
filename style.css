@@ -1,0 +1,260 @@
+li {
+    background-color: rgb(118, 193, 241); /* Cor de fundo padrão do <li> */
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 40px; /* Espaço entre os botões */
+    padding: 10px;
+    flex-wrap: wrap; /* Permite quebra em telas menores */
+    max-width: 922px; /* Largura máxima para o menu */
+    margin: 0 auto; /* Centraliza o menu */
+    border: 2px solid #76C1F1; /* Borda azul ao redor do menu */
+    border-radius: 30px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaço interno */
+}
+
+.subcategorias-container {
+    display: flex;
+    justify-content: space-between; /* Mantém os botões separados */
+    align-items: center; /* Alinha verticalmente */
+    max-width: 922px; /* Largura máxima para o container */
+    margin: 30px auto 0 auto; /* 30px no topo, 0px embaixo */
+    padding: 10px 0;
+}
+
+.btn-sub-cat{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 2px solid #76C1F1;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    width: 200px; /* Define um tamanho fixo para os botões */
+}
+
+.btn-sub-cat:hover{
+    background-color: #76C1F1;
+    color: white;
+}
+
+.banner-principal {
+    position: relative; /* Permite que o botão seja posicionado dentro do banner */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 40px 0px 40px 0px;
+}
+
+.banner-principal img,
+#banner-secundario img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona a sombra */
+}
+
+#botao-banner-principal {
+    position: absolute; /* Posiciona o botão sobre o banner */
+    top: 50%; /* Move o botão para o meio verticalmente */
+    left: 50%; /* Move o botão para o meio horizontalmente */
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #76C1F1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.botao-newsletter {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #7e8082;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.hdr-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 2px solid #76C1F1;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    width: 150px;
+}
+
+.hdr-btn:active{
+    background-color: #5a9fcf !important;
+    color: white;
+    transform: scale(0.95) !important;
+}
+
+.hdr-btn:hover{
+    color: white;
+    background-color: #76C1F1;
+}
+
+#news{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #76C1F1;
+    border-radius: 18px;
+}
+
+.footer{
+    font-size: 30px;
+}
+
+.footer-colunas{
+    font-size: 20px;
+}
+
+.ctg-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 2px solid #76C1F1;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.ctg-btn:hover{
+    color: white;
+    background-color: #76C1F1;
+}
+
+.ctg-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin: 20px 0;
+}
+
+.image-container {
+    width: 344px; /* Largura do container */
+    height: 628px; /* Altura do container */
+    overflow: hidden; /* Garante que a imagem não ultrapasse o container */
+    border-radius: 18px; /* Bordas arredondadas, ajuste conforme necessário */
+    display: flex; /* Opcional: centraliza o conteúdo se necessário */
+    justify-content: center; /* Opcional: centraliza a imagem horizontalmente */
+    align-items: center; /* Opcional: centraliza a imagem verticalmente */
+    background-color: #f0f0f0; /* Cor de fundo para caso a imagem não carregue */
+    position: relative; /* Permite posicionamento absoluto interno, se necessário */
+}
+
+.image-container img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do container */
+    height: 100%; /* Faz com que a imagem ocupe toda a altura do container */
+    object-fit: cover; /* Garante que a imagem preencha o container sem distorção */
+    border-radius: 18px; /* Garante que as bordas da imagem sigam o container */
+}
+
+/* Estilo para o container que envolve todas as imagens */
+.image-wrapper {
+    display: flex; /* Alinha os containers lado a lado */
+    gap: 20px; /* Espaçamento entre os containers */
+    justify-content: center; /* Centraliza os containers na tela */
+    flex-wrap: wrap; /* Permite que os containers quebrem para a próxima linha, se necessário */
+}
+
+/* Estilo para cada container de imagem */
+.image-container {
+    width: 344px;
+    height: 628px;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.form-container {
+    display: flex; /* Alinha os elementos lado a lado */
+    align-items: center; /* Alinha os elementos verticalmente */
+    justify-content: center; /* Alinha os elementos horizontalmente */
+    gap: 20px; /* Espaçamento entre os elementos */
+    background: white; /* Cor de fundo do container */
+    border: 2px solid #76C1F1;
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 922px; /* Largura máxima do container */
+    margin: 20px auto; /* Centraliza o container */
+}
+
+.form-image {
+    width: 50%;
+    height: 50%;
+    object-fit: cover; /* Garante que a imagem preencha o container sem distorção */
+    border-radius: 20px;
+    background-color: #76C1F1;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.form-container label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%; /* Faz os inputs ocuparem toda a largura disponível */
+}
+
+/* Centralizar apenas o botão */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza apenas o botão */
+    margin-top: 10px;
+}
+
+.form-container .form-submit {
+    width: 50%;
+    background: #76C1F1;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 16px;
+}
+
+.form-container .form-submit:hover {
+    background: #1e81ce;
+}
